@@ -1,6 +1,6 @@
 {
     "includes": [
-        "."
+        "src"
     ],
     "exclude": [
       "libs",

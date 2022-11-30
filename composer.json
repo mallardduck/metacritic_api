@@ -1,4 +1,28 @@
 {
+    "name": "mallardduck/metacritic-api",
+    "authors": [
+        {
+            "name": "Melroy van den Berg",
+            "role": "Original Creator",
+            "homepage": "https://melroy.org/"
+        },
+        {
+            "name": "Dan Pock",
+            "role": "Fork Maintainer",
+            "homepage": "https://danpock.me/"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "./libs/simple_html_dom.php"
+        ],
+        "psr-4": {
+            "Metacritic\\API\\": "src"
+        }
+    },
+    "require": {
+        "mashape/unirest-php": "^3.0"
+    },
     "require-dev": {
         "vimeo/psalm": "^4.0",
         "phpmetrics/phpmetrics": "^2.7"

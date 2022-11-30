@@ -6,7 +6,7 @@ It will give you back the metacritic score, users score, genres, rating, develop
 The output is in [JSON format](http://us.php.net/manual/en/function.json-decode.php), so it is easy to parse in both PHP or other languages.
 
 By default it uses the URL prefix: "http://www.metacritic.com/game/pc/". If you want to search for Playstation 3 games, just change it to:
-"http://www.metacritic.com/game/playstation-3". See [metacritic.php](metacritic.php) file.
+"http://www.metacritic.com/game/playstation-3". See [metacritic.php](src/metacritic.php) file.
 
 ## Example
 
@@ -57,7 +57,7 @@ Or when metacritic.php is directly called, without input you will get: `{"error"
 
 Please, see [example.php](example.php)
 
-Another way to access the API is to directly call [metacritic.php](metacritic.php) via the website URL:
+Another way to access the API is to directly call [metacritic.php](src/metacritic.php) via the website URL:
 ```sh
 metacritic.php?game_title=Halo%202
 ```
