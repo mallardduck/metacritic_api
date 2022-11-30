@@ -43,7 +43,7 @@ class MetacriticAPI
         $this->response_body = $returnValue;
     }
 
-    public function getMetacriticScores()
+    public function getMetacriticScores(): array
     {
         # Get DOM by string content
         $html = str_get_html($this->response_body);
@@ -137,16 +137,6 @@ class MetacriticAPI
         }
 
         # Return JSON format
-        return json_encode($json_output);
-    }
-}
-
-if ($_SERVER['SCRIPT_FILENAME'] == __FILE__) {
-    if (isset($_GET['game_title'])) {
-        $metacritic_api = new MetacriticAPI();
-        $metacritic_api->getMetacriticPage($_GET['game_title']);
-        echo $metacritic_api->getMetacriticScores();
-    } else {
-        echo json_encode(array("error" => "Game title is empty"));
+        return $json_output;
     }
 }
