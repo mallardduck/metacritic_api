@@ -1,4 +1,12 @@
 {
+    "autoload": {
+        "files": [
+            "./libs/simple_html_dom.php"
+        ],
+        "psr-4": {
+            "Metacritic\\API\\": "src"
+        }
+    },
     "require": {
         "mashape/unirest-php": "^3.0"
     },
