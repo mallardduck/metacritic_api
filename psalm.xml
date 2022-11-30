@@ -7,7 +7,7 @@
     xsi:schemaLocation="https://getpsalm.org/schema/config vendor/vimeo/psalm/config.xsd"
 >
     <projectFiles>
-        <file name="metacritic.php" />
+        <directory name="src" />
         <ignoreFiles>
             <directory name="libs" />
             <directory name="vendor" />
@@ -17,7 +17,7 @@
         <UndefinedClass>
             <errorLevel type="suppress">
                 <referencedClass name="Unirest\Request" />
-                <file name="metacritic.php" />
+                <directory name="src" />
             </errorLevel>
         </UndefinedClass>
     </issueHandlers>

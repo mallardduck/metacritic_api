@@ -1,4 +1,17 @@
 {
+    "name": "mallardduck/metacritic-api",
+    "authors": [
+        {
+            "name": "Melroy van den Berg",
+            "role": "Original Creator",
+            "homepage": "https://melroy.org/"
+        },
+        {
+            "name": "Dan Pock",
+            "role": "Fork Maintainer",
+            "homepage": "https://danpock.me/"
+        }
+    ],
     "autoload": {
         "files": [
             "./libs/simple_html_dom.php"
